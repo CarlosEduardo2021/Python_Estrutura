@@ -1,8 +1,11 @@
-c = int(input('Valor das capital inicial:R$ '))
-taxa = int(input('Taxa de rendimento % ao ano"): '))
-anos = int(input('Quantos de investimento: '))
+# Valor de juros compostos para investimento anual.
 
-montante = int ((c * (1 + (taxa / 100)))**anos)
+c = float(input('Valor do capital inicial:R$ '))
+taxa = float(input('Taxa em % de rendimento ao ano: '))
+anos = float(input('Investimento de quantos anos : '))
 
-print('Para uma envestimento de R${:.2f} em {} anos'.format(c, anos), end='')
-print(' o valor final será de R$ {}'.format(montante))
+montante = int (c * ((1 + (taxa / 100))**anos))
+lucro = float (montante - c)
+
+print('Para uma envestimento de R${:.2f} por {} anos'.format(c, anos), end='')
+print(' o seu lucro é de R$ {:.2f} , resultando no total de {:.2f} '.format(lucro, montante))
