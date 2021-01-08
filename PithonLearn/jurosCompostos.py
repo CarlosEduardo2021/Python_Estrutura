@@ -2,7 +2,7 @@
 
 c = float(input('Valor do capital inicial:R$ '))
 taxa = float(input('Taxa em % de rendimento ao ano: '))
-anos = float(input('Investimento de quantos anos : '))
+anos = int(input('Investimento de quantos anos : '))
 
 montante = int (c * ((1 + (taxa / 100))**anos))
 lucro = float (montante - c)
